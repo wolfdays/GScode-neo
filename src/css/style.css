@@ -1,0 +1,330 @@
+/*stylesheet start-----------------------------*/
+
+/*setting @font-face rule----------------------*/
+@font-face {
+  font-family: 'bagnardsans';
+  src: url(/fonts/bagnardsans-webfont.woff);
+}
+
+@font-face {
+  font-family: 'officecodepro';
+  src: url(/fonts/officecodepro-regular-webfont.woff);
+}
+
+@font-face {
+  font-family: 'texgyreheros';
+  src: url(/fonts/texgyreheros-regular-webfont.woff);
+}
+/*@font-face rule end--------------------------*/
+
+
+html {
+/*palette import from coloors------------------*/
+/*HEX COLOR CODES*/
+--charcoal: #2e4057ff;
+--air-superiority-blue: #759eb8ff;
+--almond: #f1dabfff;
+--persimmon: #f45d01ff;
+--auburn: #a52422ff;
+/*HSLA COLOR CODES*/
+--charcoal: hsla(214, 31%, 26%, 1);
+--air-superiority-blue: hsla(203, 32%, 59%, 1);
+--almond: hsla(32, 64%, 85%, 1);
+--persimmon: hsla(23, 99%, 48%, 1);
+--auburn: hsla(1, 66%, 42%, 1);
+/*---------------------------------------------*/
+/* CSS HSL */
+--resolution-blue: hsla(236, 59%, 30%, 1);
+--scarlet: hsla(11, 100%, 50%, 1);
+--blue-ncs: hsla(198, 58%, 43%, 1);
+--moonstone: hsla(188, 100%, 36%, 1);
+--peach-yellow: hsla(40, 98%, 79%, 1);
+--cadet-gray: hsla(196, 18%, 54%, 1);
+--chinese-violet: hsla(321, 14%, 48%, 1);
+--whitishwhite: rgb(255, 233, 192)
+/*palette import end---------------------------*/
+
+
+/*HTML OTHERS----------------------------------*/
+  font-family: 'officecodepro';
+  font-size: 19px;
+  line-height: 1.4;
+  text-overflow: ellipsis; 
+  overflow-wrap: break-word;
+/*cooler box sizing----------------------------*/
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img { 
+  box-sizing: content-box; 
+}
+/*box sizing end-------------------------------*/
+
+/*link states----------------------------------*/
+a:link {
+  color: var(--resolution-blue);
+  text-decoration: underline;
+}
+
+a:visited {
+  color:var(--scarlet)
+}
+
+a:focus {
+  outline: medium solid var(--resolution-blue);
+}
+
+a:hover {
+  background-color: hsla(236, 59%, 30%, 0.2);
+}
+
+a:active {
+  color: hsla(203, 99%, 52%, 1);
+  outline: none;
+  background-color: hsla(181, 66%, 61%, 0.2);
+}
+/*link states end------------------------------*/
+
+/*structure------------------------------------*/
+body {
+  background-image: url("/images/bg-stars.gif");
+  background-repeat: repeat;
+  background-color: var(--charcoal);
+  margin-top: auto;
+  margin: 0 auto;
+  font-family: 'officecodepro';
+}
+
+#container {
+  max-width: 1100px;
+  /*max-height: 720px;*/
+  margin: 3em auto 0;
+}
+
+#headerarea {
+  /*position: fixed;*/
+  width: 100%;
+  margin-top: 1rem;
+  border: 0.2em ridge var(--resolution-blue);
+}
+
+header { 
+  height: calc(100% / 5);
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding: 0 1rem 0;
+  align-content: center;
+  background-image: url("/images/banner-1.png");
+  background-position: right;
+}
+
+nav {
+  height: calc(100% / 20);
+  align-content: center;
+  /*border-bottom: solid;*/
+  font-family: 'texgyreheros';
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  background: var(--resolution-blue);
+}
+
+nav ul {
+  display: flex;
+  margin: auto auto 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+  padding: 0.4em;
+  border: none;
+  color: whitesmoke;
+}
+
+/*navigation links-----------------------------*/
+a.navlink {
+  color: rgb(255, 233, 192);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a.navlink:hover {
+  font-weight: 500;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+a.navlink:active {
+  font-weight: 800;
+}
+
+a.darklink {
+  color: rgb(31, 13, 2);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+a.darklink:hover {
+  color: rgb(31, 13, 2);
+  font-weight: bolder;
+  text-decoration: underline;
+}
+/*navigation links over------------------------*/
+
+#flex {
+  display: flex;
+  margin-top: 1rem;
+  padding: 0;
+  width: 100%;
+}
+
+main {
+  width: calc(100% / 5 * 4);
+  padding: 1em;
+  margin: 0;
+  background-color: var(--peach-yellow);
+  border: 0.2em ridge var(--resolution-blue);
+}
+
+#rightsidebar {
+  background-color: var(--cadet-gray);
+  border: 0.2em ridge var(--resolution-blue);
+  width: calc(100% / 5);
+  padding: 1em;
+  margin-left: 1rem;
+  display: flexbox;
+}
+
+#rightsidebar ul {
+  list-style-type: none;
+  margin: 0 0 10px;
+  padding-left: 0;
+}
+
+#rightsidebar li {
+  padding: 0.1em;
+}
+
+footer {
+  background-color: var(--chinese-violet);
+  border-top: solid;
+  height: calc(100% / 10);
+  font-size: 0.7em;
+  margin-top: 1rem;
+  border: 0.2em ridge var(--chinese-violet);
+}
+
+footer ul {
+  display: flex;
+  margin: 0;
+  padding: 0.4rem;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+footer li {
+  text-align: justify;
+  padding: 0 0.3em 0;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+/*structure end--------------------------------*/
+
+header h1 {
+  font-family: 'bagnardsans';
+  font-style: italic;
+  color: whitesmoke;
+}
+
+a .button {
+ size: 88px 31px;
+}
+
+@media screen and (max-width: 800px) {
+  #flex {
+    flex-wrap: wrap;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  main {
+    order:1;
+  }
+
+  #rightsidebar {
+    order:2;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+ }
+
+@media screen and (orientation: portrait) {
+  nav {
+    font-size: 3vw;
+  }
+  
+  #headerarea {
+    width: 100%;
+  }
+
+  #flex {
+    font-size: 4vw;
+    max-height: fit-content;
+    flex-wrap: wrap;
+    padding: 0;
+    /*background-color: var(--peach-yellow);*/
+  }
+
+  main {
+    width: 100%;
+    margin: 0;
+  }
+
+  #rightsidebar {
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+
+  #rightsidebar ul {
+    border: 2px solid black;
+  }
+
+  #rightsidebar li {
+    margin: 1vw 0 1vw 1vw;
+    padding: 0 1vw 0;
+  }
+
+  header {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  a.button {
+    width: 20%;
+  }
+  
+  footer {
+    font-size: 0.4em;
+  }
+  
+  
+  
+ }
+/*stylesheet end-------------------------------*/

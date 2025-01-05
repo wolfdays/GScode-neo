@@ -1,13 +1,11 @@
-‐‐‐
+---
 title: Main Page
 layout: layout/base.njk
-‐‐‐
-
-# Hello!! :3c
+---
 
 This is a paragraph of text. It's pretty simple, really.
 
-This is the second paragraph. It contains an *emphasized* element.
+This is the second paragraph. It contains an *empathised* element.
 
 Lists?
 

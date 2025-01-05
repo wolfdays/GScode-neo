@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-UK">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>+ welcome aboard the glowship</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.gif">
   </head>
+
   <body>
-    <h1>{{ title }}</h1>
-    <nav>{% include "navbar.njk" %}</nav>
-    <main>{{ content | safe }}</main>
-    <footer>{% include "footer.njk" %}</footer>
+    <div id="container">
+      <div id="headerarea">
+        <header>{% include "partials/header.njk" %}</header>
+        <nav>{% include "partials/navbar.njk" %}</nav>
+      </div>
+      
+      <div id="flex">
+        <main>{{ content | safe }}</main>
+        <aside id="rightsidebar"> {% include "partials/rightsidebar.njk" %}</aside>
+      </div>
+
+     <footer>{% include "partials/footer.njk" %}</footer>
+    </div>
   </body>
 </html>
