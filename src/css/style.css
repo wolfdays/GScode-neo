@@ -114,7 +114,7 @@
   }
   
   main {
-    width: calc(100% / 5 * 4);
+    width: calc(100% / 7 * 5);
     padding: 0 1em 1em;
     margin: 0;
     background-color: var(--peach-yellow);
@@ -124,7 +124,7 @@
   #rightsidebar {
     background-color: var(--cadet-gray);
     border: 0.2em ridge var(--resolution-blue);
-    width: calc(100% / 5);
+    width: calc(100% / 7 * 2);
     padding: 1em;
     margin-left: 1rem;
     display: flexbox;
@@ -144,6 +144,34 @@
   
   a .button {
    size: 88px 31px;
+  }
+
+  #icon-me {
+    float: inline-start;
+    width: 30%;
+    border: 0.2em ridge var(--resolution-blue);
+    margin: 1.2em 1.5em 0 1.2em;
+    background-color: var(--auburn);
+  }
+
+  #changelog {
+    border: 0.25rem ridge var(--auburn);
+    margin-bottom: 1em;
+    padding: 0.1em;
+    background-color: hsla(1, 66%, 42%, 0.3);
+  }
+
+  #changelog h2 {
+    font-size: 1em;
+  }
+
+  #changelog ul {
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+
+  #changelog li {
+    font-size: 0.8em;
   }
 
   #headerarea {

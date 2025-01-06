@@ -3,4 +3,14 @@
     <li> <a class=darklink href="#">Topic 2</a></li>
     <li> <a class=darklink href="#">Topic 3</a></li>
 </ul>
+
+<div id="changelog">
+    <h2>Changelog</h2>
+    <ul>
+        {% for item in changelog %}
+        <li>{{ item.date }} - {{ item.text }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
 <a class="button" href="https://neocities.org"> <img src="/images/neocities-button.gif" alt="a button that says 'NeoCities.org'"></a>
