@@ -31,14 +31,15 @@
   --cadet-gray: hsla(196, 18%, 54%, 1);
   --chinese-violet: hsla(321, 14%, 48%, 1);
   --whitishwhite: rgb(255, 233, 192)
-  
+  --space-cadet: hsla(240, 36%, 17%, 1);
+  --light-yellow: hsla(53, 100%, 93%, 1);
+  --brilliant-rose: hsla(328, 93%, 63%, 1);
   
   /*GENERAL--------------------------------------*/
     font-family: 'officecodepro';
-    font-size: 19px;
+    font-size: 17px;
     line-height: 1.4;
     text-overflow: ellipsis; 
-    overflow-wrap: break-word;
     box-sizing: border-box;
   }
   
@@ -98,6 +99,7 @@
     margin-top: auto;
     margin: 0 auto;
     font-family: 'officecodepro';
+    overflow: auto;
   }
   
   #container {
@@ -115,17 +117,20 @@
   
   main {
     width: calc(100% / 7 * 5);
+    height: 30rem;
     padding: 0 1em 1em;
     margin: 0;
     background-color: var(--peach-yellow);
     border: 0.2em ridge var(--resolution-blue);
+    overflow: scroll;
+
   }
   
   #rightsidebar {
     background-color: var(--cadet-gray);
     border: 0.2em ridge var(--resolution-blue);
     width: calc(100% / 7 * 2);
-    padding: 1em;
+    padding: 0.5em;
     margin-left: 1rem;
     display: flexbox;
   }
@@ -147,7 +152,7 @@
   }
 
   #icon-me {
-    float: inline-start;
+    float: start;
     width: 30%;
     border: 0.2em ridge var(--resolution-blue);
     margin: 1.2em 1.5em 0 1.2em;
@@ -155,10 +160,11 @@
   }
 
   #changelog {
-    border: 0.25rem ridge var(--auburn);
+    border: 0.25rem ridge hsla(328, 93%, 63%, 1);
     margin-bottom: 1em;
     padding: 0.1em;
-    background-color: hsla(1, 66%, 42%, 0.3);
+    background-color: hsla(240, 36%, 17%, 1);
+    color: hsla(53, 100%, 93%);
   }
 
   #changelog h2 {
@@ -301,7 +307,7 @@
     }
   
     #flex {
-      font-size: 4vw;
+      font-size: 3vw;
       max-height: fit-content;
       flex-wrap: wrap;
       padding: 0;

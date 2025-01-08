@@ -2,7 +2,6 @@
 title: Landing Page
 layout: layout/base.njk
 ---
-
 <img id="icon-me" src="images/me-icon.png" alt="small drawing of my sona :)">
 
 <p>Hello, fellow traveler. Be welcome to <em>The Glowship</em>. This is, as most say, my little personal corner in the web. I am the Pilot of the machine. I am a rather introverted individual, but also find great joy in sharing my babbling and trinkets with the world. So, I decided to open the Glowship to the public, in search of said joy. And this is the product of that thought :). You are aboard.</p>
