@@ -114,7 +114,7 @@
     padding: 0;
     width: 100%;
   }
-  
+
   main {
     width: calc(100% / 7 * 5);
     height: 30rem;
@@ -152,7 +152,7 @@
   }
 
   #icon-me {
-    float: start;
+    float: inline-start;
     width: 30%;
     border: 0.2em ridge var(--resolution-blue);
     margin: 1.2em 1.5em 0 1.2em;

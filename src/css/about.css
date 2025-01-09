@@ -1,0 +1,38 @@
+#infobox {
+    border: 2px solid gray;
+    margin-top: 1em;
+    align-content: start;
+    padding: 1em;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 0.8em;
+}
+
+#textbox {
+    border: 2px solid gray;
+    margin-top: 1em;
+    align-content: start;
+    padding: 1em;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 0.8em;
+}
+
+#infobox img {
+    width:100%;
+    margin-bottom: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+    #infobox { grid-area: 1 / 1 / 5 / 3; }
+    #textbox { grid-area: 1 / 3 / 3 / 6; }
+    .div3 { grid-area: 3 / 1 / 5 / 4; }
+    .div4 { grid-area: 3 / 4 / 5 / 5; }
+    .div5 { grid-area: 3 / 5 / 5 / 6; } 
